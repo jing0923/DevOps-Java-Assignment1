@@ -31,7 +31,7 @@ public class BankAccount {
     }
 
     public void printInfo(){
-        System.out.println("Customer Name: "+ customerFirstName + " " + customerLastName + "\nAccount Number: " + accountNumber + "\nBalance: " + balance + "\nEmail: " + email + "\nPhone Number: " + phoneNumber);
+        System.out.println("Customer Name: "+ customerFirstName + " " + customerLastName + "\nAccount Number: " + accountNumber + "\nBalance: " + balance + "\nEmail: " + email + "\nPhone Number: " + phoneNumber + "\n ");
     }
 
 }

@@ -23,11 +23,15 @@ public class BankAccount {
 
     public void depositFunds(double deposit) {
         this.balance += deposit;
+        System.out.println("Deposit Successfully\n");
     }
 
     public void withdrawFunds(double withdraw) {
         if(balance < withdraw) System.out.println(customerFirstName + " " + customerLastName + "\n sorry, you have insufficient balance: " + balance );
-        else this.balance -= withdraw;
+        else {
+            this.balance -= withdraw;
+            System.out.println("Withdraw Successfully\n");
+        }
     }
 
     public void printInfo(){

@@ -23,17 +23,13 @@ public class FirstProgramm {
                     break;
                 case "3":
                     System.out.println("Please enter the amount money: "); //connect with API
-                    Scanner in = new Scanner(System.in);
-                    String deposit = in.nextLine();
+                    String deposit = input.nextLine();
                     myAccount.depositFunds(Double.parseDouble(deposit));
-                    System.out.println("Deposit Successfully\n");
                     break;
                 case "4":
                     System.out.println("Please enter the amount of money you want to withdraw: ");
-                    Scanner out = new Scanner(System.in);
-                    String withdraw = out.nextLine();
+                    String withdraw = input.nextLine();
                     myAccount.withdrawFunds(Double.parseDouble(withdraw));
-                    System.out.println("Withdraw Successfully\n");
                     break;
                 default:
                     System.out.println("Wrong input!\n");
